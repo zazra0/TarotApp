@@ -1,0 +1,3 @@
+Form1 form1 = Application.OpenForms.OfType<Form1>().FirstOrDefault();
+// ... diğer kodlar ...
+form1.UpdateButton3Visibility(); 
