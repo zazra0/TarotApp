@@ -33,9 +33,12 @@ namespace OKULPROJESİ
             {
                 MessageBox.Show("Lütfen geçerli bir kart giriniz!");
             }
-            MessageBox.Show("2920", "Onay Kodunuz:", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            label9.Visible = true;
-            textBox8.Visible = true;
+            else
+            {
+                MessageBox.Show("2920", "Onay Kodunuz:", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                label9.Visible = true;
+                textBox8.Visible = true;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)

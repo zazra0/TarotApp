@@ -78,6 +78,9 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            pictureBox44 = new PictureBox();
+            pictureBox46 = new PictureBox();
+            pictureBox45 = new PictureBox();
             label4 = new Label();
             secilengoster = new Button();
             yorumlamayaGec = new Button();
@@ -129,10 +132,16 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox42).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox43).BeginInit();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox44).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox46).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox45).BeginInit();
             SuspendLayout();
             // 
             // kartlarikar
             // 
+            kartlarikar.BackgroundImage = (Image)resources.GetObject("kartlarikar.BackgroundImage");
+            kartlarikar.Font = new Font("Microsoft JhengHei", 9F, FontStyle.Bold);
+            kartlarikar.ForeColor = SystemColors.ButtonHighlight;
             kartlarikar.Location = new Point(203, 395);
             kartlarikar.Name = "kartlarikar";
             kartlarikar.Size = new Size(150, 46);
@@ -144,6 +153,7 @@
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.BackColor = Color.FromArgb(64, 0, 64);
             flowLayoutPanel1.Controls.Add(pictureBox1);
             flowLayoutPanel1.Controls.Add(pictureBox2);
             flowLayoutPanel1.Controls.Add(pictureBox3);
@@ -592,7 +602,7 @@
             // pictureBox41
             // 
             pictureBox41.Image = (Image)resources.GetObject("pictureBox41.Image");
-            pictureBox41.Location = new Point(3, 86);
+            pictureBox41.Location = new Point(31, 68);
             pictureBox41.Name = "pictureBox41";
             pictureBox41.Size = new Size(109, 160);
             pictureBox41.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -603,18 +613,19 @@
             // pictureBox42
             // 
             pictureBox42.Image = (Image)resources.GetObject("pictureBox42.Image");
-            pictureBox42.Location = new Point(177, 86);
+            pictureBox42.Location = new Point(205, 68);
             pictureBox42.Name = "pictureBox42";
             pictureBox42.Size = new Size(109, 160);
             pictureBox42.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox42.TabIndex = 3;
             pictureBox42.TabStop = false;
             pictureBox42.Visible = false;
+            pictureBox42.Click += pictureBox42_Click;
             // 
             // pictureBox43
             // 
             pictureBox43.Image = (Image)resources.GetObject("pictureBox43.Image");
-            pictureBox43.Location = new Point(348, 86);
+            pictureBox43.Location = new Point(376, 68);
             pictureBox43.Name = "pictureBox43";
             pictureBox43.Size = new Size(109, 160);
             pictureBox43.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -624,15 +635,21 @@
             // 
             // groupBox1
             // 
+            groupBox1.BackColor = Color.Transparent;
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(pictureBox43);
             groupBox1.Controls.Add(pictureBox41);
             groupBox1.Controls.Add(pictureBox42);
+            groupBox1.Controls.Add(pictureBox44);
+            groupBox1.Controls.Add(pictureBox46);
+            groupBox1.Controls.Add(pictureBox45);
+            groupBox1.Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox1.ForeColor = SystemColors.ButtonHighlight;
             groupBox1.Location = new Point(39, 491);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(484, 292);
+            groupBox1.Size = new Size(522, 292);
             groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
             groupBox1.Text = "Seçilen kartlar:";
@@ -641,40 +658,73 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(356, 254);
+            label3.Location = new Point(387, 248);
             label3.Name = "label3";
-            label3.Size = new Size(98, 32);
+            label3.Size = new Size(104, 30);
             label3.TabIndex = 7;
             label3.Text = "Gelecek";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(192, 255);
+            label2.Location = new Point(224, 248);
             label2.Name = "label2";
-            label2.Size = new Size(74, 32);
+            label2.Size = new Size(78, 30);
             label2.TabIndex = 6;
             label2.Text = "Şimdi";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(18, 254);
+            label1.Location = new Point(31, 248);
             label1.Name = "label1";
-            label1.Size = new Size(91, 32);
+            label1.Size = new Size(97, 30);
             label1.TabIndex = 5;
             label1.Text = "Geçmiş";
+            // 
+            // pictureBox44
+            // 
+            pictureBox44.BackColor = Color.Black;
+            pictureBox44.Location = new Point(363, 55);
+            pictureBox44.Name = "pictureBox44";
+            pictureBox44.Size = new Size(137, 191);
+            pictureBox44.TabIndex = 13;
+            pictureBox44.TabStop = false;
+            // 
+            // pictureBox46
+            // 
+            pictureBox46.BackColor = Color.Black;
+            pictureBox46.Location = new Point(18, 55);
+            pictureBox46.Name = "pictureBox46";
+            pictureBox46.Size = new Size(137, 191);
+            pictureBox46.TabIndex = 15;
+            pictureBox46.TabStop = false;
+            // 
+            // pictureBox45
+            // 
+            pictureBox45.BackColor = Color.Black;
+            pictureBox45.Location = new Point(192, 55);
+            pictureBox45.Name = "pictureBox45";
+            pictureBox45.Size = new Size(137, 191);
+            pictureBox45.TabIndex = 14;
+            pictureBox45.TabStop = false;
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Khaki;
+            label4.Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.ForeColor = SystemColors.ControlDark;
             label4.Location = new Point(646, 38);
             label4.Name = "label4";
-            label4.Size = new Size(0, 32);
+            label4.Size = new Size(0, 30);
             label4.TabIndex = 7;
             // 
             // secilengoster
             // 
+            secilengoster.BackgroundImage = (Image)resources.GetObject("secilengoster.BackgroundImage");
+            secilengoster.Font = new Font("Microsoft JhengHei", 9F, FontStyle.Bold);
+            secilengoster.ForeColor = SystemColors.ButtonHighlight;
             secilengoster.Location = new Point(93, 798);
             secilengoster.Name = "secilengoster";
             secilengoster.Size = new Size(336, 46);
@@ -685,6 +735,9 @@
             // 
             // yorumlamayaGec
             // 
+            yorumlamayaGec.BackgroundImage = (Image)resources.GetObject("yorumlamayaGec.BackgroundImage");
+            yorumlamayaGec.Font = new Font("Microsoft JhengHei", 9F, FontStyle.Bold);
+            yorumlamayaGec.ForeColor = SystemColors.ButtonHighlight;
             yorumlamayaGec.Location = new Point(653, 220);
             yorumlamayaGec.Name = "yorumlamayaGec";
             yorumlamayaGec.Size = new Size(286, 46);
@@ -696,13 +749,19 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
+            label5.Font = new Font("Segoe UI", 16.125F, FontStyle.Regular, GraphicsUnit.Point, 162);
+            label5.ForeColor = Color.White;
             label5.Location = new Point(657, 312);
             label5.Name = "label5";
-            label5.Size = new Size(0, 32);
+            label5.Size = new Size(0, 59);
             label5.TabIndex = 10;
             // 
             // label6
             // 
+            label6.BackColor = Color.Gold;
+            label6.Font = new Font("Microsoft JhengHei", 10.875F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = Color.DarkSlateBlue;
             label6.Location = new Point(657, 409);
             label6.Name = "label6";
             label6.Size = new Size(491, 266);
@@ -710,11 +769,14 @@
             // 
             // anaSayfa
             // 
+            anaSayfa.BackgroundImage = (Image)resources.GetObject("anaSayfa.BackgroundImage");
+            anaSayfa.Font = new Font("Microsoft JhengHei", 9F, FontStyle.Bold);
+            anaSayfa.ForeColor = SystemColors.ButtonHighlight;
             anaSayfa.Location = new Point(692, 739);
             anaSayfa.Name = "anaSayfa";
-            anaSayfa.Size = new Size(150, 46);
+            anaSayfa.Size = new Size(218, 56);
             anaSayfa.TabIndex = 12;
-            anaSayfa.Text = "Ana sayfaya git";
+            anaSayfa.Text = "Ana Sayfaya Git";
             anaSayfa.UseVisualStyleBackColor = true;
             anaSayfa.Click += anaSayfa_Click;
             // 
@@ -722,6 +784,8 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1240, 891);
             Controls.Add(anaSayfa);
             Controls.Add(label6);
@@ -732,6 +796,7 @@
             Controls.Add(flowLayoutPanel1);
             Controls.Add(kartlarikar);
             Controls.Add(groupBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form2";
             Text = "Üç Kart Yayılımı";
             flowLayoutPanel1.ResumeLayout(false);
@@ -780,6 +845,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox43).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox44).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox46).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox45).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -841,5 +909,8 @@
         private Label label5;
         private Label label6;
         private Button anaSayfa;
+        private PictureBox pictureBox44;
+        private PictureBox pictureBox46;
+        private PictureBox pictureBox45;
     }
 }

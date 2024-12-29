@@ -35,8 +35,11 @@ namespace OKULPROJESİ
 
             form1.MyLabel.Text = "Hoşgeldin " + textBox1.Text;
             form1.MyLabel2.Text = form4.bakiyeDondur();
-            form1.girisyapildi = true;
+           
             form1.button3.Visible = false;
+            form1.button2.Visible = false;
+            form1.label5.Visible = false;
+
             form1.Show();
             this.Hide();
 

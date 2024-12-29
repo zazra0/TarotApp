@@ -9,7 +9,7 @@ namespace OKULPROJESİ
     public abstract class Fal
     {
         public abstract string Kart_Cek();
-
+        #region Tüm kartlar listesi
         public static List<string> Tum_Kartlar = new List<string>
         {
             "Deli",
@@ -92,8 +92,8 @@ namespace OKULPROJESİ
                 "Kral Tılsım"
 
         };
+        #endregion
 
-        
     }
 }
 

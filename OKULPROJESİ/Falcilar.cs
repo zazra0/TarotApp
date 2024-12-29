@@ -9,6 +9,7 @@ namespace OKULPROJESİ
 {
     public class Falcilar
     {
+        #region İris
         public class Irisf:Falcilar
         {
             string ad = "Kahin İris";
@@ -27,6 +28,8 @@ namespace OKULPROJESİ
 
 
         }
+        #endregion
+        #region Bora
         public class Boraf:Falcilar
         {
             string ad = "Medyum Bora";
@@ -43,6 +46,8 @@ namespace OKULPROJESİ
                 else return 600;
             }
         }
+        #endregion
+        #region Sultan
         public class Sultanf:Falcilar
         {
             string ad = "Falcı Sultan Teyze";
@@ -59,6 +64,7 @@ namespace OKULPROJESİ
                 else return 800;
             }
         }
+        #endregion
         public virtual int Kampanya(string kariyer)
         {
             return 0;

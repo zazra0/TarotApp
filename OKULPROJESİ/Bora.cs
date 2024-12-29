@@ -52,7 +52,7 @@ namespace OKULPROJESİ
                         form1.Show();
                         this.Hide();
                     }
-                    return; 
+                    return;
                 }
             }
             if (form1 != null)
@@ -66,7 +66,7 @@ namespace OKULPROJESİ
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ucret = 200; 
+            ucret = 200;
             Form1 form1 = Application.OpenForms.OfType<Form1>().FirstOrDefault();
             if (form1 != null)
             {
@@ -84,7 +84,7 @@ namespace OKULPROJESİ
                         form1.Show();
                         this.Hide();
                     }
-                    return; 
+                    return;
                 }
             }
             if (form1 != null)
@@ -94,6 +94,18 @@ namespace OKULPROJESİ
             Form3 form3 = new Form3();
             form3.Show();
             this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = Application.OpenForms.OfType<Form1>().FirstOrDefault();
+            form1.Show();
+            this.Hide();
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

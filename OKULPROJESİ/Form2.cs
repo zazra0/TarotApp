@@ -112,7 +112,7 @@ namespace OKULPROJESİ
                 string yorum1 = fal.Kart_Yorum1(gecmis);
                 string yorum2 = fal.Kart_Yorum1(simdi);
                 string yorum3 = fal.Kart_Yorum1(gelecek);
-                label6.Text = "Kartların, geçmişin için: " + yorum1 + "\n" + " şu anın için: " + yorum2 + "\n" + " geleceğin için ise: " + yorum3 + "\n" + " temsilinde bulundu.";
+                label6.Text = "Kartların, geçmişin için: " + yorum1 + "\n" + "şu anın için: " + yorum2 + "\n" + "geleceğin için ise: " + yorum3 /*+ "\n"*/ + " temsilinde bulundu.";
             }
         }
         protected override void OnFormClosing(FormClosingEventArgs e)
@@ -127,12 +127,20 @@ namespace OKULPROJESİ
 
         private void anaSayfa_Click(object sender, EventArgs e)
         {
+
             Form1 form1 = Application.OpenForms.OfType<Form1>().FirstOrDefault();
             if (form1 != null)
             {
+                
+               
                 form1.Show();
-                this.Close(); 
+                this.Close();
             }
+
+        }
+
+        private void pictureBox42_Click(object sender, EventArgs e)
+        {
 
         }
     }

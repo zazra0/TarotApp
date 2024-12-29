@@ -4,14 +4,16 @@ namespace OKULPROJESİ
 {
     public partial class Form1 : Form
     {
-        public bool girisyapildi { get; set; } = false;
 
-        private static bool button2Clicked = false;
+
+        private static bool button3Clicked = false;
         public Form1()
         {
             InitializeComponent();
-            button2.Visible = !button2Clicked;
-            label5.Visible = !button2Clicked;
+            button2.Visible = !button3Clicked;
+
+            label5.Visible = !button3Clicked;
+
 
         }
 
@@ -45,7 +47,7 @@ namespace OKULPROJESİ
             Iris iris = new Iris();
             iris.Show();
             this.Hide();
-            
+
 
 
 
@@ -60,9 +62,9 @@ namespace OKULPROJESİ
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            button2Clicked = true;
-            button2.Visible = false;
-            label5.Visible = false;
+            button7.Visible = true;
+            label3.Visible = true;
+            button6.Visible = true;
             Form4 form4 = new Form4();
             form4.Show();
             this.Hide();
@@ -71,7 +73,11 @@ namespace OKULPROJESİ
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            button2.Visible = false;
+            label5.Visible = false;
+            button7.Visible=true;
+            label3.Visible = true;
+            button6.Visible = true;
 
             Form5 form5 = new Form5();
             form5.Show();
@@ -109,6 +115,18 @@ namespace OKULPROJESİ
         {
             BakiyeYukle bakiyeYukle = new BakiyeYukle();
             bakiyeYukle.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            button7.Visible = false;
+            button2.Visible=true;
+            button3.Visible=true;
+            label5.Visible=true;
+            label2.Text="";
+            label4.Text = null;
+            label3.Visible = false;
+            button6.Visible = false;
         }
     }
 }

@@ -23,6 +23,7 @@ namespace OKULPROJESİ
                            $"Gelecek zaman için: {secilenKart3}";
             return cumle;
         }
+        #region Geçmiş zaman için yorum
         public string Kart_Yorum1(string secilenKart1)
         {
             string cumle1;
@@ -64,8 +65,10 @@ namespace OKULPROJESİ
                     cumle1 = "Hastalık";
                     return cumle1;
                 default: return "İyileşme";
-            }
+            }           
         }
+        #endregion
+        #region Şimdiki zaman için yorum
         public string Kart_Yorum2(string secilenKart2)
         {
             string cumle2;
@@ -109,6 +112,8 @@ namespace OKULPROJESİ
                 default: return "İyileşme";
             }
         }
+        #endregion
+        #region Gelecek zaman için yorum
         public string Kart_Yorum3(string secilenKart3)
         {
             string cumle3;
@@ -152,5 +157,6 @@ namespace OKULPROJESİ
                 default: return "İyileşme";
             }
         }
+        #endregion
     }
 }

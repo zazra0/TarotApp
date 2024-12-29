@@ -42,9 +42,10 @@
             groupBox1 = new GroupBox();
             pictureBox2 = new PictureBox();
             groupBox2 = new GroupBox();
-            label3 = new Label();
-            label5 = new Label();
             pictureBox3 = new PictureBox();
+            label5 = new Label();
+            label3 = new Label();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -55,14 +56,16 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Microsoft JhengHei", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(82, 50);
             label1.Name = "label1";
-            label1.Size = new Size(78, 32);
+            label1.Size = new Size(0, 30);
             label1.TabIndex = 0;
-            label1.Text = "label1";
             // 
             // button1
             // 
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Bold);
             button1.Location = new Point(220, 79);
             button1.Name = "button1";
             button1.Size = new Size(150, 46);
@@ -73,7 +76,9 @@
             // 
             // button2
             // 
-            button2.Location = new Point(263, 141);
+            button2.BackgroundImage = (Image)resources.GetObject("button2.BackgroundImage");
+            button2.Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Bold);
+            button2.Location = new Point(198, 141);
             button2.Name = "button2";
             button2.Size = new Size(150, 46);
             button2.TabIndex = 2;
@@ -86,16 +91,17 @@
             label2.AutoSize = true;
             label2.Location = new Point(6, 86);
             label2.Name = "label2";
-            label2.Size = new Size(78, 32);
+            label2.Size = new Size(0, 30);
             label2.TabIndex = 3;
-            label2.Text = "label2";
             // 
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Microsoft JhengHei UI", 9F);
+            label4.ForeColor = SystemColors.ButtonHighlight;
             label4.Location = new Point(1, 50);
             label4.Name = "label4";
-            label4.Size = new Size(75, 32);
+            label4.Size = new Size(81, 30);
             label4.TabIndex = 6;
             label4.Text = "Ücret:";
             // 
@@ -112,7 +118,9 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(354, 32);
+            label13.BackColor = Color.Transparent;
+            label13.ForeColor = SystemColors.ButtonHighlight;
+            label13.Location = new Point(299, 89);
             label13.Name = "label13";
             label13.Size = new Size(152, 32);
             label13.TabIndex = 25;
@@ -121,16 +129,21 @@
             // label12
             // 
             label12.AutoSize = true;
+            label12.BackColor = Color.Transparent;
+            label12.Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label12.ForeColor = SystemColors.ButtonHighlight;
             label12.Location = new Point(299, 211);
             label12.Name = "label12";
-            label12.Size = new Size(85, 32);
+            label12.Size = new Size(92, 30);
             label12.TabIndex = 24;
             label12.Text = "Yaş: 34";
             // 
             // label11
             // 
             label11.AutoSize = true;
+            label11.BackColor = Color.Transparent;
             label11.Font = new Font("Curlz MT", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = SystemColors.ButtonHighlight;
             label11.Location = new Point(292, 150);
             label11.Name = "label11";
             label11.Size = new Size(402, 36);
@@ -140,31 +153,36 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Font = new Font("Simple Indust Shaded", 10.875F, FontStyle.Regular, GraphicsUnit.Point, 178);
+            label10.BackColor = Color.Transparent;
+            label10.Font = new Font("Microsoft JhengHei UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label10.ForeColor = SystemColors.ButtonHighlight;
             label10.Location = new Point(37, 20);
             label10.Name = "label10";
-            label10.Size = new Size(275, 53);
+            label10.Size = new Size(231, 41);
             label10.TabIndex = 26;
             label10.Text = "Medyum Bora";
             // 
             // groupBox1
             // 
+            groupBox1.BackColor = Color.Transparent;
             groupBox1.Controls.Add(pictureBox2);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(button1);
+            groupBox1.Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox1.ForeColor = SystemColors.ButtonHighlight;
             groupBox1.Location = new Point(37, 441);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(400, 315);
             groupBox1.TabIndex = 27;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Üç kart yayılımı";
+            groupBox1.Text = "Üç Kart Yayılımı";
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(17, 141);
+            pictureBox2.Location = new Point(31, 141);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(339, 156);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -173,34 +191,20 @@
             // 
             // groupBox2
             // 
+            groupBox2.BackColor = Color.Transparent;
             groupBox2.Controls.Add(pictureBox3);
             groupBox2.Controls.Add(label5);
             groupBox2.Controls.Add(label3);
             groupBox2.Controls.Add(button2);
+            groupBox2.Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox2.ForeColor = SystemColors.ButtonHighlight;
             groupBox2.Location = new Point(512, 441);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(471, 315);
+            groupBox2.Size = new Size(400, 315);
             groupBox2.TabIndex = 28;
             groupBox2.TabStop = false;
             groupBox2.Text = "Tek Kart Yayılımı";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(29, 50);
-            label3.Name = "label3";
-            label3.Size = new Size(75, 32);
-            label3.TabIndex = 7;
-            label3.Text = "Ücret:";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(110, 50);
-            label5.Name = "label5";
-            label5.Size = new Size(53, 32);
-            label5.TabIndex = 8;
-            label5.Text = "200";
+            groupBox2.Enter += groupBox2_Enter;
             // 
             // pictureBox3
             // 
@@ -212,11 +216,49 @@
             pictureBox3.TabIndex = 9;
             pictureBox3.TabStop = false;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft JhengHei UI", 9F);
+            label5.ForeColor = SystemColors.ButtonHighlight;
+            label5.Location = new Point(83, 50);
+            label5.Name = "label5";
+            label5.Size = new Size(55, 30);
+            label5.TabIndex = 8;
+            label5.Text = "200";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft JhengHei UI", 9F);
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(6, 50);
+            label3.Name = "label3";
+            label3.Size = new Size(81, 30);
+            label3.TabIndex = 7;
+            label3.Text = "Ücret:";
+            // 
+            // button3
+            // 
+            button3.BackgroundImage = (Image)resources.GetObject("button3.BackgroundImage");
+            button3.Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = SystemColors.ButtonHighlight;
+            button3.Location = new Point(759, 75);
+            button3.Name = "button3";
+            button3.Size = new Size(205, 46);
+            button3.TabIndex = 29;
+            button3.Text = "Ana Sayfaya git";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
+            // 
             // Bora
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1055, 791);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1013, 791);
+            Controls.Add(button3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             Controls.Add(label10);
@@ -224,6 +266,7 @@
             Controls.Add(label12);
             Controls.Add(label11);
             Controls.Add(pictureBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Bora";
             Text = "Bora";
             Load += Bora_Load;
@@ -256,5 +299,6 @@
         private Label label5;
         private Label label3;
         private PictureBox pictureBox3;
+        private Button button3;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form5));
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             button1 = new Button();
@@ -51,6 +52,9 @@
             // 
             // button1
             // 
+            button1.BackgroundImage = (Image)resources.GetObject("button1.BackgroundImage");
+            button1.Font = new Font("Microsoft JhengHei UI", 10.125F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ButtonHighlight;
             button1.Location = new Point(259, 446);
             button1.Name = "button1";
             button1.Size = new Size(150, 46);
@@ -62,18 +66,24 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Bold);
+            label1.ForeColor = SystemColors.ButtonHighlight;
             label1.Location = new Point(66, 203);
             label1.Name = "label1";
-            label1.Size = new Size(147, 32);
+            label1.Size = new Size(160, 30);
             label1.TabIndex = 3;
             label1.Text = "Kullanıcı adı:";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Bold);
+            label2.ForeColor = SystemColors.ButtonHighlight;
             label2.Location = new Point(66, 326);
             label2.Name = "label2";
-            label2.Size = new Size(67, 32);
+            label2.Size = new Size(75, 30);
             label2.TabIndex = 4;
             label2.Text = "Şifre:";
             label2.Click += label2_Click;
@@ -82,12 +92,14 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(638, 644);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form5";
             Text = "Giriş Ekranı";
             ResumeLayout(false);

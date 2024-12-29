@@ -8,6 +8,7 @@ namespace OKULPROJESİ
 {
     public class Kartlar : KartKarma
     {
+        #region Tum Kartlar listesi
         public static List<string> Tum_Kartlar = new List<string>
         {
          "Deli", "Büyücü", "Başrahibe", "İmparatoriçe", "İmparator",
@@ -28,17 +29,15 @@ namespace OKULPROJESİ
         "Vale Tılsım", "Şövalye Tılsım", "Kraliçe Tılsım", "Kral Tılsım"
 
         };
-
+        #endregion
         public static List<string> GetList()
         {
             return Tum_Kartlar;
         }
         public static List<string> KaristirilmisKartlar = new List<string>();
 
-
         public static void KaristirKartlar()
         {
-            
             KaristirilmisKartlar = Kart_Karma(new List<string>(Tum_Kartlar));
         }
 

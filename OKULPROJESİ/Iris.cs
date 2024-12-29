@@ -18,9 +18,9 @@ namespace OKULPROJESİ
             InitializeComponent();
         }
         public int ucret;
-        
-        public int UcretDondur() {  return ucret; }
-        
+
+        public int UcretDondur() { return ucret; }
+
         public void Iris_Load(object sender, EventArgs e)
         {
             string kariyer = Form4.SecilenKariyer;
@@ -37,16 +37,16 @@ namespace OKULPROJESİ
             string kariyer = Form4.SecilenKariyer;
             Falcilar.Irisf irisf = new Falcilar.Irisf();
             ucret = irisf.Kampanya(kariyer);
-           
+
             Form1 form1 = Application.OpenForms.OfType<Form1>().FirstOrDefault();
             if (form1 != null)
             {
                 if (form1.GetBakiye() < ucret)
                 {
-                   DialogResult result = MessageBox.Show("Yetersiz bakiye! Bakiye yüklemek ister misiniz?",
-                   "Uyarı",
-                   MessageBoxButtons.YesNo,
-                   MessageBoxIcon.Warning);
+                    DialogResult result = MessageBox.Show("Yetersiz bakiye! Bakiye yüklemek ister misiniz?",
+                    "Uyarı",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
 
                     if (result == DialogResult.Yes)
                     {
@@ -61,7 +61,7 @@ namespace OKULPROJESİ
                     return;
                 }
             }
-                if (form1 != null)
+            if (form1 != null)
             {
                 form1.BakiyeGuncelle(ucret);
             }
@@ -73,7 +73,7 @@ namespace OKULPROJESİ
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ucret = 250; 
+            ucret = 250;
             Form1 form1 = Application.OpenForms.OfType<Form1>().FirstOrDefault();
             if (form1 != null)
             {
@@ -103,6 +103,13 @@ namespace OKULPROJESİ
             }
             Form3 form3 = new Form3();
             form3.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = Application.OpenForms.OfType<Form1>().FirstOrDefault();
+            form1.Show();
             this.Hide();
         }
     }
